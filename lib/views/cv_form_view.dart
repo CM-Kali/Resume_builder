@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:resume_app/app/routes.dart';
 import 'package:resume_app/widgets/custom_text_field.dart';
 import 'package:resume_app/controllers/cv_controller.dart';
 class cvformView extends StatelessWidget {
@@ -35,7 +36,9 @@ class cvformView extends StatelessWidget {
                 maxlines: 4,
               ),
               const SizedBox(height: 24,),
-              ElevatedButton(onPressed: (){}, child: Text("Preview Cv")),
+              ElevatedButton(onPressed: (){
+                Get.to(AppRoutes.preview);
+              }, child: Text("Preview Cv")),
             ],
           ),
       ),
