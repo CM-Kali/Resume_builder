@@ -31,8 +31,16 @@ class preview extends StatelessWidget {
 
                 ),
                 Text(controller.email.value),
+                SizedBox(height: 12,),
                 Text(controller.phone.value),
-                Text(controller.summary.value),
+                SizedBox(height: 12,),
+
+                Text(controller.summary.value,
+                style: TextStyle(
+                  fontSize: 12,
+                ),
+                ),
+
 
               ],
 
