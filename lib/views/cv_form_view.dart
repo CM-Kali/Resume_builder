@@ -37,7 +37,7 @@ class cvformView extends StatelessWidget {
               ),
               const SizedBox(height: 24,),
               ElevatedButton(onPressed: (){
-                Get.to(AppRoutes.preview);
+                Get.toNamed(AppRoutes.preview);
               }, child: Text("Preview Cv")),
             ],
           ),
